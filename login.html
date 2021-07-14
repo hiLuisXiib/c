@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Xivit chat</title>
+</head>
+
+<body>
+    <SCRIPT language=JavaScript>
+        function go() {
+
+            if (document.form.password.value == '123' && document.form.login.value == 'demo') {
+                document.form.submit();
+            } else {
+                alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
+            }
+        }
+    </SCRIPT>
+    <FORM name=form action="https://video-chat-v1.manuthecoder.repl.co/5e8fd704-667e-4dd3-9801-283e5e142ffc">
+
+        <P>Usuario:
+            <INPUT type=text name=login>
+            <P>Contraseña:
+                <INPUT type=password name=password>
+                <INPUT onclick=go() type=button value=Acceder>
+
+    </FORM>
+</body>
+
+</html>
